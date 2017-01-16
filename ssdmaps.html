@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Sherwood SD Maps</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="map.geojson"></script>
+  <script src="lut.js"></script>
+  <script src="ssdmaps.js"></script>
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+  <script>
+
+</script>
+</head>
+<body>
+  <div id="control">
+    <div id="status"></div>
+	<div id ="views">
+	  <p>Boundary:
+	    <select id="boundary">
+		  <option>Elementary</option>
+		  <option>Middle School</option>
+		  <option>High School</option>
+		</select>
+	  </p>
+	  <p> Legend<br>
+	    Archer Glen <span class="ag_walk">Walk</span>&nbsp;&nbsp;<span class="ag_bus">Bus</span><br>
+		Edy Ridge <span class="er_walk">Walk</span>&nbsp;&nbsp;<span class="er_bus">Bus</span><br>
+		Hopkins<span class="he_walk">Walk</span>&nbsp;&nbsp;<span class="he_bus">Bus</span><br>
+	    Middleton <span class="me_walk">Walk</span>&nbsp;&nbsp;<span class="me_bus">Bus</span><br>
+	    Sherwood Middle School <span class="sms_walk">Walk</span>&nbsp;&nbsp;<span class="sms_bus">Bus</span><br>
+	    Laural Ridge Middle School <span class="lrms_walk">Walk</span>&nbsp;&nbsp;<span class="lrms_bus">Bus</span><br>
+	    Sherwood High School <span class="shs_walk">Walk</span>&nbsp;&nbsp;<span class="shs_bus">Bus</span><br>
+	  </p>
+      <p><a href="https://www.openstreetmap.org/#map=17/45.36420/-122.84127">Open OpenStreetMaps</a></p>
+	  <p><a href="http://geojson.io/#map=12/45.3533/-122.8451">Open GeoJSON Boundaries</a></p>
+	</div>
+  </div>
+  <div id="mapid" style="width: 1000px; height: 800px"></div>
+</body>
+</html>
